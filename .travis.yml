@@ -10,3 +10,4 @@ install:
 
 script:
   - nose2 pip_save
+  - mypy pip_save/

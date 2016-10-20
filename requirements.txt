@@ -1,3 +1,4 @@
 distlib==0.2.4
 nose2==0.6.5
 six==1.10.0
+mypy-lang==0.4.5
