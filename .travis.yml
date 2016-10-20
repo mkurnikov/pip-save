@@ -5,9 +5,12 @@ notifications:
 python:
   - "3.5"
 
+matrix:
+  include:
+    - env: JOBNAME=mypy
+
 install:
   - pip install -r requirements.txt
 
 script:
-  - nose2 pip_save
-  - mypy pip_save/
+  - $JOBNAME pip_save/
