@@ -1,14 +1,6 @@
-from pprint import pprint
-from typing import List
-
-import pkg_resources
-from distlib.database import DistributionPath
-from distlib.database import InstalledDistribution
-from packaging.utils import canonicalize_name
 from pip import cmdoptions
 from pip.commands import InstallCommand
 from pip.req import InstallRequirement
-from pkg_resources import working_set
 
 from pip_save.save_cmdoptions import save
 from pip_save.save_cmdoptions import save_dev
